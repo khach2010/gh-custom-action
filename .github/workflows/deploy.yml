@@ -71,4 +71,8 @@ jobs:
           bucket: gha-custom-action-hosting-practice
           dist-folder: ./dist
           bucket-region: eu-north-1
+      - name: Output website URL
+        run: |
+          echo "Website URL: ${{ steps.deploy.outputs.website-url }}"
+
 
