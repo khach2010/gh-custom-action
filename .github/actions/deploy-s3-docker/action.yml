@@ -13,7 +13,7 @@ inputs:
     required: true
 outputs:
   website-url:
-    description: 'The URL of the deployed website'
+    description: 'The URL of the deployed website 2'
 runs:
   using: 'docker'
   image: 'Dockerfile'
