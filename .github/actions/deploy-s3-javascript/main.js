@@ -5,8 +5,8 @@ const exec = require('@actions/exec');
 function run( ) {
     // 1) Get the inputs
     const bucket = core.getInput('bucket', { required: true });
-    const bucketRegion = core.getInput('bucketRegion', { required: true });
-    const distFolder = core.getInput('distFolder', { required: true });
+    const bucketRegion = core.getInput('bucket-region', { required: true }); // Use kebab-case
+    const distFolder = core.getInput('dist-folder', { required: true }); // Use kebab-case
 
     // 2) Upload files to S3
     const s3Uri = `s3://${bucket}`;
